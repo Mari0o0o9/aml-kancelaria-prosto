@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AML Kancelaria Prosto — AML bez papierologii</title>
+<style>
+  :root{
+    --bg:#0f1417;
+    --bg-card:#161d22;
+    --text:#e8edf0;
+    --text-dim:#9fb0b8;
+    --accent:#3ecf8e;
+    --accent-dim:#2a8f63;
+    --border:#263136;
+    --danger:#e0745a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.5;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
+  header{padding:24px 0;border-bottom:1px solid var(--border);}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;}
+  .logo{font-weight:700;font-size:1.1rem;letter-spacing:-0.02em;}
+  .logo span{color:var(--accent);}
+  nav a{color:var(--text-dim);text-decoration:none;font-size:0.9rem;margin-left:24px;}
+  nav a:hover{color:var(--text);}
+
+  .hero{padding:80px 0 60px;text-align:center;}
+  .hero h1{font-size:2.6rem;font-weight:800;letter-spacing:-0.03em;max-width:720px;margin:0 auto 20px;}
+  .hero h1 span{color:var(--accent);}
+  .hero p{font-size:1.15rem;color:var(--text-dim);max-width:560px;margin:0 auto 36px;}
+  .badge{display:inline-block;background:rgba(62,207,142,0.12);color:var(--accent);border:1px solid rgba(62,207,142,0.3);
+    padding:6px 14px;border-radius:999px;font-size:0.8rem;font-weight:600;margin-bottom:24px;}
+
+  form.signup{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center;}
+  form.signup input[type=email]{
+    flex:1;min-width:220px;padding:14px 16px;border-radius:8px;border:1px solid var(--border);
+    background:var(--bg-card);color:var(--text);font-size:1rem;
+  }
+  form.signup input[type=email]:focus{outline:none;border-color:var(--accent);}
+  form.signup input[type=email]::placeholder{color:var(--text-dim);opacity:1;}
+  form.signup button{
+    padding:14px 22px;border-radius:8px;border:none;background:var(--accent);color:#04140c;
+    font-weight:700;font-size:1rem;cursor:pointer;
+  }
+  form.signup button:hover{background:var(--accent-dim);color:#04140c;}
+  .form-note{font-size:0.8rem;color:var(--text-dim);margin-top:12px;}
+
+  section{padding:56px 0;border-top:1px solid var(--border);}
+  section h2{font-size:1.6rem;font-weight:700;margin-bottom:28px;letter-spacing:-0.02em;}
+
+  .problems{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;}
+  .card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:22px;}
+  .card h3{font-size:1rem;margin-bottom:8px;color:var(--danger);}
+  .card p{color:var(--text-dim);font-size:0.92rem;}
+
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;}
+  .step .num{
+    display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;
+    background:var(--accent);color:#04140c;border-radius:50%;font-weight:800;margin-bottom:12px;
+  }
+  .step h3{font-size:1.05rem;margin-bottom:6px;}
+  .step p{color:var(--text-dim);font-size:0.92rem;}
+
+  .pricing-card{background:var(--bg-card);border:1px solid var(--accent-dim);border-radius:14px;padding:32px;max-width:420px;margin:0 auto;text-align:center;}
+  .pricing-card .price{font-size:2.4rem;font-weight:800;margin:10px 0;}
+  .pricing-card .price span{font-size:1rem;color:var(--text-dim);font-weight:500;}
+  .pricing-card ul{list-style:none;text-align:left;margin:20px 0;color:var(--text-dim);font-size:0.92rem;}
+  .pricing-card li{padding:6px 0;border-bottom:1px solid var(--border);}
+  .pricing-card li:last-child{border-bottom:none;}
+
+  footer{padding:36px 0;text-align:center;color:var(--text-dim);font-size:0.82rem;border-top:1px solid var(--border);}
+  footer a{color:var(--text-dim);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">AML <span>Kancelaria Prosto</span></div>
+    <nav>
+      <a href="#problem">Problem</a>
+      <a href="#jak-dziala">Jak działa</a>
+      <a href="#cena">Cena</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">Wczesny dostęp — zapisz się i pomóż nam to zbudować</span>
+    <h1>AML dla Twojej kancelarii, <span>bez papierologii</span></h1>
+    <p>Ocena ryzyka klienta, rejestr czynności i pilnowanie terminów GIIF — w jednym miejscu,
+       skonfigurowane pod kancelarię prawną lub notarialną, nie pod 20 różnych branż naraz.</p>
+
+    <form class="signup" action="mailto:morteusz111@gmail.com" method="get" enctype="text/plain">
+      <input type="email" name="email" placeholder="twoj@email.pl" required>
+      <button type="submit">Zapisz się</button>
+    </form>
+    <p class="form-note">Zero spamu. Damy znać, gdy produkt będzie gotowy do testów. Formularz otworzy Twój program pocztowy — to wersja tymczasowa na czas MVP.</p>
+  </div>
+</section>
+
+<section id="problem">
+  <div class="wrap">
+    <h2>Znajomy problem?</h2>
+    <div class="problems">
+      <div class="card">
+        <h3>Ocena ryzyka robiona "na już"</h3>
+        <p>Aktualizacja oceny ryzyka raz na 2 lata ląduje na ostatnią chwilę, w Wordzie, bez pewności, że nic nie umknęło.</p>
+      </div>
+      <div class="card">
+        <h3>Brak czasu na compliance</h3>
+        <p>Prowadzisz sprawy klientów, nie dział compliance. AML to obowiązek doklejony do reszty pracy.</p>
+      </div>
+      <div class="card">
+        <h3>Strach przed kontrolą GIIF</h3>
+        <p>Nie wiadomo, czy dokumentacja i terminy zgłoszeń są w porządku, dopóki nie przyjdzie kontrola.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="jak-dziala">
+  <div class="wrap">
+    <h2>Jak to ma działać</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Wypełniasz krótki formularz</h3>
+        <p>Pytania dopasowane do kancelarii prawnej/notarialnej, nie ogólny formularz dla 20 branż.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Dostajesz gotową ocenę ryzyka</h3>
+        <p>Dokument zgodny z ustawą AML, gotowy do podpisu i archiwizacji.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Pilnujemy terminów za Ciebie</h3>
+        <p>Przypomnienie o aktualizacji oceny ryzyka i zmianach przepisów, zanim staną się problemem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cena">
+  <div class="wrap">
+    <h2>Planowana cena</h2>
+    <div class="pricing-card">
+      <div>Kancelaria Prosto</div>
+      <div class="price">99–149 zł <span>/ mies.</span></div>
+      <ul>
+        <li>Ocena ryzyka AML dopasowana do kancelarii</li>
+        <li>Rejestr czynności i klientów</li>
+        <li>Przypomnienia o terminach GIIF</li>
+        <li>Powiadomienia o zmianach przepisów</li>
+      </ul>
+      <p class="form-note">Cena wstępna, do potwierdzenia z pierwszymi użytkownikami. Zapisz się wyżej, żeby mieć na to wpływ.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>AML Kancelaria Prosto — projekt we wczesnej fazie, jeszcze nie jest gotowym produktem ani spółką.</p>
+    <p>Kontakt: <a href="mailto:morteusz111@gmail.com">morteusz111@gmail.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
